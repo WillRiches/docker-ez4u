@@ -36,3 +36,11 @@ services:
         volumes_from:
             - php
             - nginx
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        ports:
+            - "8080:80"
+    redis:
+        image: redis:alpine
+        ports:
+            - 6379:6379
