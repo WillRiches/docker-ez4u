@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd ~/docker-symfony
+docker-compose exec php bash

@@ -36,6 +36,12 @@ Based on [https://github.com/maxpou/docker-symfony](maxpou/docker-symfony)
         $ sf3 doctrine:schema:update --force
         ```
 
+4. Add commands to path (.bashrc/.bash_profile etc)
+
+    ```bash
+    $ export PATH=~/docker-symfony/bin:$PATH
+    ```
+
 ## Usage
 
 Just run `docker-compose up -d`, then:
