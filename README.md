@@ -4,21 +4,13 @@ Based on [https://github.com/maxpou/docker-symfony](maxpou/docker-symfony)
 
 ## Installation
 
-1. Create a `.env` from the `.env.dist` file. Adapt it according to your Symfony application
+1. Build/run containers with (with and without detached mode)
 
     ```bash
-    cp .env.dist .env
-    ```
-
-
-2. Build/run containers with (with and without detached mode)
-
-    ```bash
-    $ docker-compose build
     $ docker-compose up -d
     ```
 
-3. Prepare Symfony app
+2. Prepare Symfony app
     1. Update app/config/parameters.yml
 
         ```yml
@@ -36,7 +28,7 @@ Based on [https://github.com/maxpou/docker-symfony](maxpou/docker-symfony)
         $ sf3 doctrine:schema:update --force
         ```
 
-4. Add commands to path (.bashrc/.bash_profile etc)
+3. Add commands to path (.bashrc/.bash_profile etc)
 
     ```bash
     $ export PATH=~/docker-symfony/bin:$PATH
